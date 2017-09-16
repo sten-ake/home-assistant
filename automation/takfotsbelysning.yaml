@@ -7,10 +7,24 @@
     service: switch.turn_on
     entity_id: switch.takfotsbelysning
 
-- alias: 'Släck tackfotsbelysning efter klockan 23'
+- alias: 'Släck tackfotsbelysning efter klockan 22'
   trigger:
     - platform: time
-      at: "23:00:00"
+      at: "22:00:00"
   action:
     service: switch.turn_off
+    entity_id: switch.takfotsbelysning
+
+- alias: 'Tänd takfotsbelysning vid rörelse'
+  trigger:
+    - platform: state
+      entity_id: switch.rorelsesensor_garage
+    - platform: state
+      entity_id: switch.rorelsesensor_tradgard
+  condition:
+    condition: state
+    entity_id: switch.takfotsbelysning
+    state: 'off'
+  action:
+    service: switch.turn_on
     entity_id: switch.takfotsbelysning

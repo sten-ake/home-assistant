@@ -16,6 +16,10 @@ Klimat:
 Kontoret:
   - switch.kontoret
 
+Sovrum:
+  - sensor.sovrum_temperature
+  - sensor.sovrum_humidity
+
 Lilla Sovrumet:
   - switch.lilla_rummet
 
@@ -24,5 +28,6 @@ Hall:
 
 Utsida:
   - switch.takfotsbelysning
-  - switch.rorelsesensor_garage
+  - switch.tradgardsbelysning_garageplats
+  - switch.rorelsesensor_ingang
   - switch.rorelsesensor_tradgard

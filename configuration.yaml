@@ -30,6 +30,10 @@ homeassistant:
       friendly_name: Vindhastighet
     sensor.yr_pressure:
       friendly_name: Tryck
+    sensor.sovrum_humidity:
+      friendly_name: Luftfuktighet
+    sensor.sovrum_temperature:
+      friendly_name: Temperatur
 
 
 
