@@ -1,0 +1,28 @@
+Väder:
+  - sensor.yr_symbol
+  - sensor.yr_temperature
+  - sensor.yr_humidity
+  - sensor.yr_pressure
+  - sensor.yr_wind_direction
+  - sensor.yr_wind_speed
+  - sensor.yr_fog
+  - sensor.yr_precipitation
+  - sensor.yr_cloudiness
+
+Klimat:
+  - sensor.kontor_temperature
+  - sensor.kontor_humidity
+
+Kontoret:
+  - switch.kontoret
+
+Lilla Sovrumet:
+  - switch.lilla_rummet
+
+Hall:
+  - switch.hallen
+
+Utsida:
+  - switch.takfotsbelysning
+  - switch.rorelsesensor_garage
+  - switch.rorelsesensor_tradgard
